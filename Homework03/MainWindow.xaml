@@ -1,0 +1,35 @@
+﻿<Window x:Class="Homework03.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Homework03"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="300">
+    <Grid Margin="5">
+        <ListView x:Name="uxList" Background="BurlyWood" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Name}" Width="70">
+                        <GridViewColumn.Header>
+                            <GridViewColumnHeader Tag="Name"  Click="UserListColumnHeaderClickedHandler">
+                                Name
+                            </GridViewColumnHeader>
+                        </GridViewColumn.Header>
+                    </GridViewColumn>
+
+                    <GridViewColumn DisplayMemberBinding="{Binding Password}"
+                                    Width="70">
+                        <GridViewColumn.Header>
+                            <GridViewColumnHeader Tag="Password"  Click="UserListColumnHeaderClickedHandler">
+                                Password
+                            </GridViewColumnHeader>
+
+                        </GridViewColumn.Header>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>

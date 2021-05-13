@@ -51,7 +51,7 @@
             <TextBlock Margin="68,20,0,0">Enter Zip Code or Postal Code:</TextBlock>
 
             <TextBox x:Name="uxZpcode" 
-                    Width="150" Height="25" Background="Bisque" FontSize="16px" FontFamily="Impact" Foreground="LightBlue"
+                    Width="150" Height="25" Background="Bisque" FontSize="16px" FontFamily="Impact" Foreground="Blue"
                     Text="{Binding ZpCode, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"
                     TextChanged="ZipCodeChanged" >
             </TextBox>
